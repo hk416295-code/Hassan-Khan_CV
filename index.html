@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hassan Khan | Front-End Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+min-height:100vh;
+padding:40px;
+color:#333;
+
+}
+
+.container{
+
+max-width:1100px;
+margin:auto;
+background:#fff;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+}
+
+.header{
+
+background:linear-gradient(135deg,#2563eb,#1e40af);
+padding:50px;
+text-align:center;
+color:white;
+position:relative;
+
+}
+
+.profile{
+
+width:140px;
+height:140px;
+background:white;
+border-radius:50%;
+margin:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:60px;
+font-weight:bold;
+color:#2563eb;
+border:6px solid rgba(255,255,255,.3);
+
+}
+
+.header h1{
+
+margin-top:20px;
+font-size:42px;
+letter-spacing:1px;
+
+}
+
+.header h3{
+
+margin-top:8px;
+font-weight:400;
+opacity:.9;
+
+}
+
+.contact{
+
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+
+}
+
+.contact span{
+
+background:rgba(255,255,255,.15);
+padding:10px 18px;
+border-radius:30px;
+backdrop-filter:blur(10px);
+font-size:14px;
+
+}
+
+.main{
+
+display:grid;
+grid-template-columns:1fr 2fr;
+
+}
+
+.left{
+
+background:#f8fafc;
+padding:35px;
+
+}
+
+.right{
+
+padding:35px;
+
+}
+
+.section{
+
+margin-bottom:35px;
+
+}
+
+.section h2{
+
+font-size:22px;
+color:#2563eb;
+margin-bottom:18px;
+padding-bottom:8px;
+border-bottom:3px solid #2563eb;
+
+}
+
+.summary{
+
+line-height:1.9;
+
+}
+
+.skills{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+
+}
+
+.skills span{
+
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+transition:.3s;
+
+}
+
+.skills span:hover{
+
+transform:translateY(-5px);
+background:#1e40af;
+
+}
+
+.education li,
+.languages li{
+
+margin-bottom:12px;
+line-height:1.8;
+
+}
+
+.project{
+
+background:#f8fafc;
+padding:18px;
+border-radius:15px;
+margin-bottom:15px;
+transition:.3s;
+border-left:5px solid #2563eb;
+
+}
+
+.project:hover{
+
+transform:translateX(8px);
+box-shadow:0 15px 25px rgba(0,0,0,.08);
+
+}
+
+.project h3{
+
+color:#1e40af;
+margin-bottom:8px;
+
+}
+
+.exp{
+
+background:#f8fafc;
+padding:20px;
+border-radius:15px;
+border-left:5px solid #2563eb;
+
+}
+
+.exp ul{
+
+padding-left:20px;
+margin-top:12px;
+
+}
+
+.exp li{
+
+margin-bottom:10px;
+line-height:1.8;
+
+}
+
+.footer{
+
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+@media(max-width:900px){
+
+.main{
+
+grid-template-columns:1fr;
+
+}
+
+body{
+
+padding:15px;
+
+}
+
+.header{
+
+padding:35px;
+
+}
+
+.header h1{
+
+font-size:34px;
+
+}
+
+}
+
+.fade{
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+.fade.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<div class="profile">
+HK
+</div>
+
+<h1>Hassan Khan</h1>
+
+<h3>Front-End Web Developer</h3>
+
+<div class="contact">
+
+<span>📞 03182828879</span>
+
+<span>📧 hk416295@gmail.com</span>
+
+<span>💻 github.com/hk416295-code</span>
+
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="left">
+
+<div class="section fade">
+
+<h2>Profile</h2>
+
+<p class="summary">
+
+Passionate and detail-oriented Front-End Web Developer with practical experience in HTML, CSS and JavaScript. Strong communication, teamwork and problem-solving skills with a passion for creating modern responsive websites.
+
+</p>
+
+</div>
+
+<div class="section fade">
+
+<h2>Education</h2>
+
+<ul class="education">
+
+<li><b>Intermediate</b><br>Pre-Engineering</li>
+
+<li><b>Matriculation</b><br>Computer Science</li>
+
+</ul>
+
+</div>
+
+
+<div class="section fade">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Responsive Design</span>
+<span>Microsoft Word</span>
+<span>Microsoft Excel</span>
+<span>PowerPoint</span>
+<span>Communication</span>
+<span>Teamwork</span>
+<span>Problem Solving</span>
+<span>Time Management</span>
+
+</div>
+
+</div>
+
+<div class="section fade">
+
+<h2>Languages</h2>
+
+<ul class="languages">
+
+<li>English</li>
+<li>Urdu</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- Right Side -->
+
+<div class="right">
+
+<div class="section fade">
+
+<h2>Professional Experience</h2>
+
+<div class="exp">
+
+<h3>AGA KHAN UNIVERSITY EXAMINATION BOARD</h3>
+
+<h4>Invigilator (3 Years)</h4>
+
+<ul>
+
+<li>Managed examination sessions professionally and efficiently.</li>
+
+<li>Ensured compliance with examination policies and regulations.</li>
+
+<li>Maintained discipline, confidentiality and fairness throughout examinations.</li>
+
+<li>Worked collaboratively with staff to ensure smooth examination operations.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="section fade">
+
+<h2>Featured Projects</h2>
+
+<div class="project">
+
+<h3>🏏 Cricket Website</h3>
+
+<p>Designed and developed a responsive cricket website using HTML and CSS.</p>
+
+</div>
+
+<div class="project">
+
+<h3>♟ Chess Game</h3>
+
+<p>Interactive chess game interface built using HTML, CSS and JavaScript.</p>
+
+</div>
+
+<div class="project">
+
+<h3>⏳ Countdown to Ramzan 2026</h3>
+
+<p>Dynamic countdown timer with modern user interface.</p>
+
+</div>
+
+<div class="project">
+
+<h3>📝 Professional CV Website</h3>
+
+<p>Responsive personal CV website showcasing education, skills and experience.</p>
+
+</div>
+
+<div class="project">
+
+<h3>🎨 Gradient Background Changer</h3>
+
+<p>JavaScript application that changes beautiful gradient backgrounds instantly.</p>
+
+</div>
+
+<div class="project">
+
+<h3>✅ Todo App</h3>
+
+<p>Task management application using JavaScript with local storage support.</p>
+
+</div>
+
+<div class="project">
+
+<h3>⏱ Timer App</h3>
+
+<p>Digital timer with start, stop and reset functionality.</p>
+
+</div>
+
+<div class="project">
+
+<h3>🔤 Palindrome Checker</h3>
+
+<p>JavaScript application to check palindrome words and sentences.</p>
+
+</div>
+
+<div class="project">
+
+<h3>🌐 Rancho Cucamonga Plumbing</h3>
+
+<p>Professional business website with responsive layout.</p>
+
+</div>
+
+<div class="project">
+
+<h3>❤️ Valentine Website</h3>
+
+<p>Creative animated website with interactive effects.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<h3>Hassan Khan</h3>
+
+<p>Front-End Web Developer | Passionate About Creating Beautiful Websites</p>
+
+</div>
+
+</div>
+
+<script>
+
+const fade=document.querySelectorAll(".fade");
+
+window.addEventListener("scroll",()=>{
+
+fade.forEach(item=>{
+
+const top=item.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+item.classList.add("show");
+
+}
+
+});
+
+});
+
+window.dispatchEvent(new Event("scroll"));
+
+</script>
+
+</body>
+</html>
